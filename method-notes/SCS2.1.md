@@ -1,0 +1,6 @@
+# SCS2.1 Method Note
+Label: Hand-made
+Method: I created and edited my website using HTML and CSS.
+Work: I added page structure, navigation and styling.
+Why: To make the website organized, responsive and easier to use.
+Receipt: none used -- hand-only anchor
