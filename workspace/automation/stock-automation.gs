@@ -1,3 +1,5 @@
+// AI-assisted, directed by nestine -- the FS5a label
+
 function checkstock(){
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const dashboard = ss.getSheetByName("DASHBOARD")
