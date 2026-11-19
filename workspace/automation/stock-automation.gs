@@ -28,7 +28,7 @@ function generateMonthlyReport(){
   const reportMonth = 10;
   const reportYear = 2026;
 
-  const monthName =new Date (reportYear, reportMonth).toLocaleTimeString("en",{month: "long"});
+  const monthName =new Date (reportYear, reportMonth).toLocaleDateString("en",{month: "long"});
 
   const monthLabel = `${monthName} ${reportYear}`;
 
