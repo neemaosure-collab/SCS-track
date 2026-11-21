@@ -17,3 +17,6 @@ I would always use open-ended column references like Records!E:E from the very b
 
 ## 6. What I might be wrong about
 I might be assuming the helper will always select names from the dropdown rather than pasting values; I will verify this during live user testing.
+
+## 6. What I might be wrong about, and how I would find out
+I might be wrong in assuming the shop attendant will always use the filter menu before sorting or pick items from the dropdown rather than pasting values over them. I will find out by comparing the DASHBOARD totals against the physical counter notebook after the first week of live use and checking RECORD for any red validation corners.
