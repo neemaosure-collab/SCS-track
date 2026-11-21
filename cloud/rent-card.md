@@ -16,10 +16,10 @@ Measured at 12:35 EAT on my running `t3.micro` Ubuntu instance (and via `size-sc
 ## What to rent for what
 | Workload | What to rent | Why |
 | :--- | :--- | :--- |
-| **No-server (static site only)** | Amazon S3 static hosting | Lowest cost (under 130 KES/month) with zero OS patching when there is no backend code. |
+| **No-server (static site only)** | Amazon S3 static hosting | Lowest cost (pay-per-GB storage and requests) with zero OS patching when there is no backend code. |
 | **T-micro (small dynamic app / learning)** | EC2 `t3.micro` (or `t4g.micro`) | 2 vCPUs and 1 GiB RAM handle a small web server and database at low daytime load. |
 | **Lightsail (predictable bundle)** | Lightsail entry Linux plan | Fixed monthly price including static IP and 1 TB data transfer with no surprise bandwidth charges. |
-| **Never for a small shop** | Large compute/memory instances (`m5.large`, `c5.xlarge`) | Costs roughly 8x to 16x more than a micro instance (over 8,000–16,000 KES/month); 95% of CPU and RAM would sit idle. |
+| **Never for a small shop** | Large compute/memory instances (`m5.large`, `c5.xlarge`) | Costs roughly 8x to 16x more than a micro instance (over 9,000 KES/month, aws.amazon.com/ec2/pricing/on-demand, read 2026-11-21); 95% of CPU and RAM would sit idle. |
 | **Staging / short test** | On-demand `t3.micro` stopped when done | Billed per second while running and zero compute cost when stopped between test sessions. |
 
 ## My choice
@@ -37,4 +37,4 @@ Lightsail entry Linux plan (512 MB RAM, 2 vCPUs, 20 GB SSD, 1 TB transfer) — o
 - Rate: 1 USD = 129.50 KES, from Central Bank of Kenya (centralbank.go.ke), read 2026-11-21
 
 ## Lightsail or EC2 for this client
-Lightsail for this client, because a fixed 648 KES/month bundle includes SSD storage, a static IP, and 1 TB of data transfer without metered bandwidth or EBS volume surprises.
+Lightsail for this client, because a fixed monthly bundle (648 KES/month, aws.amazon.com/lightsail/pricing, read 2026-11-21) includes SSD storage, a static IP, and 1 TB of data transfer without metered bandwidth or EBS volume surprises.
