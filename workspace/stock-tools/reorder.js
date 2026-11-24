@@ -19,7 +19,7 @@ function parseCsv(text) {
   });
 }
 
-// Items at or below their reorder level (inclusive <= boundary).(inclusive <= boundary).
+// Items at or below their reorder level (inclusive <= boundary).(inclusive <= boundary).(inclusive <= boundary).
 function reorderList(rows) {
   return rows.filter((r) => parseInt(r["In stock"], 10) <= parseInt(r["Reorder at"], 10));
 }
