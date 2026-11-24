@@ -46,3 +46,8 @@ test("ignores rows with blank stock values", () => {
   const csv = "Item,Supplier,In stock,Reorder at,Unit\nCement 50 kg,Building wholesaler,,20,bags\n";
   assert.deepStrictEqual(reorderList(parseCsv(csv)), []);
 });
+
+test("ignores rows with blank stock values", () => {
+  const csv = "Item,Supplier,In stock,Reorder at,Unit\nCement 50 kg,Building wholesaler,,20,bags\n";
+  assert.deepStrictEqual(reorderList(parseCsv(csv)), []);
+});
