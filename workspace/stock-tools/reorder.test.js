@@ -41,3 +41,9 @@ test("includes items exactly at their reorder level", () => {
   const list = reorderList(parseCsv(csv));
   assert.deepStrictEqual(list.map((r) => r.Item), ["grinding discs 115 mm"]);
 });
+
+test("includes items exactly at their reorder level", () => {
+  const csv = "Item,Supplier,In stock,Reorder at,Unit\ngrinding discs 115 mm,Gas and welding supplier,20,20,pieces\n";
+  const list = reorderList(parseCsv(csv));
+  assert.deepStrictEqual(list.map((r) => r.Item), ["grinding discs 115 mm"]);
+});
