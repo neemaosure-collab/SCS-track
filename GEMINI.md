@@ -6,8 +6,7 @@
 - Google Apps Script workbook automation lives in workspace/automation/stock-automation.gs.
 
 ## Tests
-- Run stock tool unit tests: node --test workspace/stock-tools/reorder.test.js
-- Run CLI reorder check against sample CSV: node workspace/stock-tools/reorder.js workspace/stock-tools/stock-export.csv
+cd workspace/stock-tools && node --test
 
 ## Never
 - Never hardcode API keys, tokens, or gateway secrets in source files; always read credentials from process.env and keep .env in .gitignore.
