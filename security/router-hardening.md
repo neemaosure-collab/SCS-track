@@ -1,6 +1,6 @@
 # Router hardening record -- SCS4.1
 
-Station: TR-1000-039
+Station and router: TR-1000-039 lab router
 Admin page address: http://172.30.32.1
 DHCP range: 172.30.32.100-172.30.32.200 (lab subnet 172.30.32.0/20)
 
@@ -16,6 +16,6 @@ DHCP range: 172.30.32.100-172.30.32.200 (lab subnet 172.30.32.0/20)
 ## The printer
 
 Printer's address (from its own panel or test page): 172.30.32.50
-Reserved on router / fixed outside range: yes (reserved)
+Reserved on the router: yes (reserved)
 Added on a lab laptop with a test page: yes
 Added on a phone with a test page: yes
